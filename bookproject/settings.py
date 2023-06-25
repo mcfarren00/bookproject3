@@ -15,6 +15,9 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 import dj_database_url
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -46,6 +49,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "accounts.apps.AccountsConfig",
     "book.apps.BookConfig",
+    "cloudinary",
+    "cloudinary_storage",
 ]
 
 MIDDLEWARE = [
@@ -142,3 +147,11 @@ LOGOUT_REDIRECT_URL="index"
 SUPERUSER_NAME=os.getenv("SUPERUSER_NAME")
 SUPERUSER_EMAIL=os.getenv("SUPERUSER_EMAIL")
 SUPERUSER_PASSWORD=os.getenv("SUPERUSER_PASSWORD")
+
+CLOUDINARY_STORAGE={
+    "CLOUD_NAME":"dugouswwl"
+    "API_KEY":"585722245681432"
+    "API_SECRET":"HNQwGswF_v2JYd9iVroOn3Nm3BQ"
+}
+
+DEFAULT_FILE_STORAGE="cloudinary_storage.strage.MediaCloudinaryStorage"
