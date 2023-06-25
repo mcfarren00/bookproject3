@@ -134,6 +134,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT=BASE_DIR/ "static"
+DEFAULT_FILES_STORAGE="cloudinary_storage.strage.MediaCloudinaryStorage"
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 MEDIA_URL="/media/"
 MEDIA_ROOT=BASE_DIR/"media"
@@ -153,5 +154,3 @@ CLOUDINARY_STORAGE={
     "API_KEY":os.getenv("API_KEY"),
     "API_SECRET":os.getenv("API_SECRET")
 }
-
-MEDIAFILES_STORAGE="cloudinary_storage.strage.MediaCloudinaryStorage"
