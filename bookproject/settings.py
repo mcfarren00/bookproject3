@@ -154,4 +154,4 @@ CLOUDINARY_STORAGE={
     "API_SECRET":"HNQwGswF_v2JYd9iVroOn3Nm3BQ"
 }
 
-DEFAULT_FILE_STORAGE="cloudinary_storage.strage.MediaCloudinaryStorage"
+MEDIAFILES_STORAGE="cloudinary_storage.strage.MediaCloudinaryStorage"
