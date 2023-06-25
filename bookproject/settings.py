@@ -136,7 +136,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT=BASE_DIR/ "static"
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 MEDIA_URL="/media/"
-DEFAULT_FILES_STORAGE="cloudinary_storage.strage.MediaCloudinaryStorage"
+DEFAULT_FILE_STORAGE="cloudinary_storage.strage.MediaCloudinaryStorage"
 # MEDIA_ROOT=BASE_DIR/"media"
 
 # Default primary key field type
