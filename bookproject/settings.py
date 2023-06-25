@@ -150,8 +150,8 @@ SUPERUSER_PASSWORD=os.getenv("SUPERUSER_PASSWORD")
 
 CLOUDINARY_STORAGE={
     "CLOUD_NAME":"dugouswwl",
-    "API_KEY":"585722245681432",
-    "API_SECRET":"HNQwGswF_v2JYd9iVroOn3Nm3BQ"
+    "API_KEY":os.getenv("API_KEY"),
+    "API_SECRET":os.getenv("API_SECRET")
 }
 
 MEDIAFILES_STORAGE="cloudinary_storage.strage.MediaCloudinaryStorage"
